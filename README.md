@@ -7,6 +7,7 @@ This project contains a mock Cypress test suite targeting the **Audience** secti
 ---
 
 ## 📁 Project Structure
+```bash
 fluency-api-audience-mock-tests/
 ├── cypress/
 │ ├── e2e/
@@ -15,7 +16,7 @@ fluency-api-audience-mock-tests/
 │ └── AudiencePage.js # API endpoint abstraction (POM)
 ├── cypress.config.js # Cypress configuration
 ├── README.md # This file
-
+```
 
 ---
 
