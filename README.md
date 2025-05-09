@@ -54,18 +54,21 @@ If this were a real API testing project, follow the steps below to install Cypre
 ```bash
 git clone https://github.com/naghattas/fluency-api-audience-mock-tests.git
 cd fluency-api-audience-mock-tests
-
-## 2️⃣ Install Cypress
+```
+### 2️⃣ Install Cypress
 ```bash
 npm install
-
-## 3️⃣ Run Cypress Test Runner (UI mode)
+```
+### 3️⃣ Run Cypress Test Runner (UI mode)
+```bash
 npx cypress open
-
-## Or run headless:
+```
+### Or run headless:
+```bash
 npx cypress run
-
-## ⚙️ Configuration (cypress.config.js)
+```
+### ⚙️ Configuration (cypress.config.js)
+```bash
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
@@ -75,9 +78,10 @@ module.exports = defineConfig({
     specPattern: "cypress/e2e/**/*.cy.js",
   },
 });
-- 🧪 This mock configuration allows Cypress to hit sample endpoints for demonstration purposes only.
+```
+🧪 This mock configuration allows Cypress to hit sample endpoints for demonstration purposes only.
 
-## 🔒 Authentication Note
+### 🔒 Authentication Note
 
 This test suite does **not** use authentication. In a real-world setup, you would:
 
@@ -87,7 +91,7 @@ This test suite does **not** use authentication. In a real-world setup, you woul
 
 ---
 
-## 🚀 Possible Future Enhancements
+### 🚀 Possible Future Enhancements
 
 - Add schema validation using `cy.task('validateSchema')`  
 - Load dynamic test data from fixtures  
